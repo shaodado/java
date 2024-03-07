@@ -53,6 +53,7 @@ public class w20 {
     public static void name() {
         groups.add(new ArrayList<>());
         groups.add(new ArrayList<>());
+
         groups.get(0).add("ZZZ");
         groups.get(0).add("XXX");
         groups.get(0).add("CCC");
@@ -60,6 +61,7 @@ public class w20 {
         groups.get(1).add("WW");
         groups.get(1).add("EEE");
         groups.get(1).add("RRR");
+        
         allParticipants.addAll(groups.get(0));
         allParticipants.addAll(groups.get(1));
     }
@@ -87,7 +89,7 @@ public class w20 {
                 int index = random.nextInt(group.size());
                 String participant = group.get(index);
                 System.out.println("組別: " + group);
-                System.out.println("成員: " + participant);
+                System.out.println("抽中成員: " + participant);
                 answeredParticipants.add(participant);
                 System.out.println("是否重新抽籤(Y/N)");
                 String choice = scanner.nextLine();
