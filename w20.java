@@ -89,7 +89,7 @@ public class w20 {
                 int index = random.nextInt(group.size());
                 String participant = group.get(index);
                 System.out.println("組別: " + group);
-                System.out.println("抽中成員: " + participant);
+                System.out.println("抽中的成員: " + participant);
                 answeredParticipants.add(participant);
                 System.out.println("是否重新抽籤(Y/N)");
                 String choice = scanner.nextLine();
